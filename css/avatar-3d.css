@@ -1,0 +1,161 @@
+/* 
+ * Avatar 3D Effect Styles
+ * Custom CSS for adding 3D animations and effects to the avatar image
+ */
+
+/* Main 3D container */
+.avatar-3d-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* 3D card effect */
+.avatar-3d-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border-radius: var(--_radius-l);
+}
+
+/* Hover effect - subtle rotate */
+.avatar-3d-container:hover .avatar-3d-card {
+  transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* Video/Image container */
+.avatar-3d-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: var(--_radius-l);
+}
+
+/* Video styling */
+.avatar-3d-face video,
+.avatar-3d-face img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--_radius-l);
+  transform: translateZ(0);
+  transition: transform 0.5s ease;
+}
+
+/* Light reflection overlay */
+.avatar-3d-reflection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 15%,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.8s ease;
+  transform: translateX(-100%) skewX(-15deg);
+  pointer-events: none;
+  border-radius: var(--_radius-l);
+}
+
+/* Reflection animation on hover */
+.avatar-3d-container:hover .avatar-3d-reflection {
+  opacity: 1;
+  transform: translateX(100%) skewX(-15deg);
+}
+
+/* Glow effect */
+.avatar-3d-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--_radius-l);
+  box-shadow: 
+    0 0 25px 2px var(--accent),
+    0 0 10px 1px var(--secondary);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.avatar-3d-container:hover .avatar-3d-glow {
+  opacity: 0.4;
+}
+
+/* 3D floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateZ(0);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(0);
+  }
+  100% {
+    transform: translateY(0px) translateZ(0);
+  }
+}
+
+/* Depth effect behind the card */
+.avatar-3d-depth {
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(45deg, var(--accent), var(--secondary));
+  border-radius: var(--_radius-l);
+  transform: translateZ(-20px);
+  opacity: 0.3;
+  filter: blur(8px);
+  transition: opacity 0.5s ease;
+}
+
+.avatar-3d-container:hover .avatar-3d-depth {
+  opacity: 0.6;
+}
+
+/* Parallax mouse movement effect */
+.avatar-3d-container.is-animated {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Add parallax effect with subtle movement */
+.avatar-3d-parallax {
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .avatar-3d-container:hover .avatar-3d-card {
+    transform: rotateY(5deg) rotateX(3deg);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}

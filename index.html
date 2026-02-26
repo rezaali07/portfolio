@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page Title -->
+  <title>Reza Rain - Software Engineer</title>
+
+
+  <!-- Viewport Meta-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Template Styles Start -->
+  <link rel="stylesheet" href="css/loaders/loader.css">
+  <link rel="stylesheet" type="text/css" href="css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/avatar-3d.css">
+  <!-- Template Styles End -->
+  <!-- Custom Footer Styles -->
+  <style>
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+      border-top: 1px solid rgba(var(--color-accent-rgb), 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.75rem;
+      /* Even smaller font size */
+      color: var(--text-color);
+      opacity: 0.6;
+      /* Slightly more transparent */
+      font-family: var(--primary-font);
+      /* Match site font */
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    .copyright p {
+      margin: 0;
+    }
+
+    .copyright a {
+      color: var(--accent);
+      transition: color 0.3s ease;
+    }
+
+    .copyright a:hover {
+      color: var(--secondary);
+    }
+
+    .copyright-animation {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Add subtle pulse animation to copyright symbol */
+    #copyright-year {
+      display: inline-block;
+      position: relative;
+    }
+  </style>
+
+  <!-- Custom Browser Color Start -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+  <meta name="msapplication-navbutton-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Custom Browser Color End -->
+</head>
+
+<body>
+
+  <!-- Loader Start -->
+  <div id="loader" class="loader">
+    <div id="loaderContent" class="loader__content">
+      <div class="loader__shadow"></div>
+      <div class="loader__box"></div>
+    </div>
+  </div>
+  <!-- Loader End -->
+
+  <!-- Header Start -->
+  <header id="header" class="header d-flex justify-content-between">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Navigation Menu Start -->
+    <div class="header__navigation">
+      <nav id="menu" class="menu">
+        <ul class="menu__list d-flex justify-content-start">
+          <li class="menu__item">
+            <a class="menu__link btn" href="#home">
+              <span class="menu__caption">Home</span>
+              <i class="ph-bold ph-house-simple"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#portfolio">
+              <span class="menu__caption">Projects</span>
+              <i class="ph-bold ph-squares-four"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#about">
+              <span class="menu__caption">About me</span>
+              <i class="ph-bold ph-user"></i>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link btn" href="#resume-achievements">
+              <span class="menu__caption">Services</span>
+              <i class="ph-bold ph-trophy"></i>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link btn" href="#contact">
+              <span class="menu__caption">Contact</span>
+              <i class="ph-bold ph-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navigation Menu End -->
+
+    <!-- Header Controls Start -->
+    <div class="header__controls d-flex justify-content-end">
+      <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch"
+        aria-label="light/dark mode" aria-checked="true"></button>
+      <a class="header__trigger btn" href="mailto:rezaali20ab@gmail.com?subject=Website%20Contact">
+        <i class="ph-bold ph-envelope"></i>
+      </a>
+
+      <!-- WhatsApp -->
+
+
+    </div>
+    <!-- Header Controls End -->
+
+  </header>
+  <!-- Header End -->
+
+  <!-- Gradient Background Start -->
+  <div class="gradient-background">
+    <div class="blur"></div>
+    <div class="blur"></div>
+    <div class="blur"></div>
+  </div>
+  <!-- Gradient Background End -->
+
+  <!-- Avatar Side Block Start -->
+  <div id="avatar" class="avatar">
+    <div class="avatar__container d-flex flex-column justify-content-lg-between">
+      <!-- image and logo -->
+      <div class="avatar__block">
+        <div class="avatar__logo d-flex align-items-center">
+          <div class="logo__image">
+            <!-- Your Logo Here!!! -->
+            <!--<img src="img/logo.svg" alt="Braxton - Personal Portfolio & Resume HTML Template Logo">-->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="85px" height="85px" viewBox="0 0 85 85"
+              style="enable-background:new 0 0 85 85;" xml:space="preserve" class="gradient-fill">
+              <style type="text/css">
+                .gradient-fill {
+                  fill: url(#gradientFill);
+                }
+              </style>
+              <g>
+                <linearGradient id="gradientFill" gradientUnits="userSpaceOnUse" x1="9.9604" y1="75.0338" x2="75.0387"
+                  y2="9.9555">
+                  <stop offset="0" style="stop-color:var(--accent)" />
+                  <stop offset="1" style="stop-color:var(--secondary)" />
+                </linearGradient>
+                <path class="gradient-fill" d="M51,0H34C15.2,0,0,15.2,0,34v17c0,14.3,8.9,26.6,21.4,31.6c0,0,0,0,0,0l0,0C25.3,84.1,29.5,85,34,85h17
+                    c6,0,11.7-1.6,16.6-4.3c0.1-0.1,0.2-0.1,0.3-0.2C78.1,74.6,85,63.6,85,51V34C85,15.2,69.8,0,51,0z M83,51c0,10.7-5.3,20.2-13.4,26
+                    v-2.5v-3.9h3.9v-3.9h-3.9v-3.9h3.9v-3.9h-3.9H67v-3.9V51h-3.9v3.9v3.9h2.6v3.9v3.9v3.9h-3.9h-3.9v3.9h3.9h3.9v3.9v1
+                    C61.3,81.7,56.3,83,51,83H34c-4.5,0-8.7-0.9-12.6-2.6v-2v-3.9h3.9h3.9v-3.9h-3.9h-3.9v-3.9v-3.9v-3.9H24v-3.9V51h-3.9v3.9v3.9h-2.6
+                    h-3.9v3.9h3.9v3.9h-3.9v3.9h3.9v3.9v3.9C8.2,72.8,2,62.6,2,51V34C2,16.4,16.4,2,34,2h17c17.6,0,32,14.4,32,32V51z M50.1,54.9H54
+                    v3.9v3.9h-3.9v-3.9V54.9z M33.1,54.9H37v3.9v3.9h-3.9v-3.9V54.9z M27.9,51H24v-3.9v-3.9v-3.9h3.9v3.9v3.9V51z M31.8,39.3h-3.9v-3.9
+                    h3.9V39.3z M31.8,43.2v-3.9h3.9v3.9H31.8z M63.1,47.1V51h-3.9v-3.9v-3.9v-3.9h3.9v3.9V47.1z M35.7,47.1v-3.9h3.9h3.9h3.9h3.9v3.9
+                    h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43.2z" />
+              </g>
+            </svg>
+          </div>
+          <div class="logo__caption">
+            <p>Reza Rain</p>
+          </div>
+        </div>
+        <div class="avatar__image">
+          <div class="avatar-3d-container">
+            <div class="avatar-3d-depth"></div>
+            <div class="avatar-3d-card">
+              <div class="avatar-3d-face">
+
+                <img src="img/avatars/Profile.jpeg" alt="Reza Rain - Profile">
+                <div class="avatar-3d-reflection"></div>
+                <div class="avatar-3d-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- data caption #1 -->
+      <div class="avatar__block">
+        <h6>
+
+          Software Engineer and<br>IT Operations Specialist
+        </h6>
+      </div>
+      <!-- data caption #2 -->
+      <div class="avatar__block">
+        <!-- <h6>
+          <small class="top">Location: Kathmandu, Nepal</small>
+          
+        </h6> -->
+      </div> <!-- socials and CTA button -->
+      <div class="avatar__block">
+        <div class="avatar__socials">
+          <ul class="socials-square d-flex justify-content-between">
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://github.com/rezaali07" target="_blank"><i
+                  class="ph-bold ph-github-logo"></i></a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://www.linkedin.com/in/reza-rain-a72361293/"
+                target="_blank"><i class="ph-bold ph-linkedin-logo"></i></a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn"
+                href="https://wa.me/9779800875451?text=Hello%20Reza,%20I%20visited%20your%20website." target="_blank">
+                <i class="ph-bold ph-whatsapp-logo"></i>
+              </a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://www.quora.com/profile/Its-Reza-Rain" target="_blank">
+                <i class="fa-brands fa-quora"></i>
+              </a>
+            </li>
+
+            <!-- <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://www.behance.net/" target="_blank"><i
+                  class="ph-bold ph-behance-logo"></i></a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="avatar__btnholder">
+          <a class="btn btn-default btn-fullwidth btn-hover btn-hover-accent" href="#contact" target="_blank">
+            <span class="btn-caption">Let's Work Together!</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Avatar Side Block End -->
+
+
+
+  <!-- Page Content Start -->
+  <div id="content" class="content">
+    <div class="content__wrapper">
+
+      <!-- Intro Section Start -->
+      <section id="home" class="main intro">
+
+        <!-- Headline Start -->
+        <div id="headline" class="headline d-flex align-items-start flex-column" data-speed="1">
+          <p class="headline__subtitle animate-headline">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Let's meet!</span>
+          </p>
+          <h2 class="headline__title animate-headline">I'm Reza rain<br>Software Engineer & IT Operations Specialist
+          </h2>
+          <div class="headline__btnholder d-flex flex-column flex-sm-row">
+            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline"
+              href="#portfolio">
+              <span class="btn-caption">My Works</span>
+              <i class="ph-bold ph-squares-four"></i>
+            </a> <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline"
+              href="reza_rain_cv.docx.pdf" download>
+              <span class="btn-caption">Download CV</span>
+              <i class="ph-bold ph-download-simple"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Headline End -->
+
+        <!-- Scroll Button Start -->
+        <div class="rotating-btn">
+          <a href="#portfolio" class="rotating-btn__link slide-down">
+            <!-- SVG rotating text -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve"
+              class="animate-rotation" data-value="360">
+              <defs>
+                <path id="textPath"
+                  d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z" />
+              </defs>
+              <g>
+                <use xlink:href="#textPath" fill="none"></use>
+                <text>
+                  <!-- button text here!!! -->
+                  <textPath xlink:href="#textPath">Scroll for More * Scroll for More * </textPath>
+                </text>
+              </g>
+            </svg>
+            <!-- arrow icon -->
+            <i class="ph-bold ph-arrow-down"></i>
+          </a>
+        </div>
+        <!-- Scroll Button End -->
+
+      </section>
+      <!-- Intro Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section id="portfolio" class="inner inner-first portfolio">
+
+        <!-- Content Block - H2 Section Title Start -->
+        <div class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Projects</span>
+          </p>
+          <h3 class="h2__title animate-in-up">Selected projects highlighting technical expertise and problem-solving
+            skills.</h3>
+        </div>
+        <!-- Content Block - H2 Section Title End -->
+
+        <!-- Content Block - Works Gallery Start -->
+        <div class="content__block grid-block">
+          <div class="container-fluid px-0 inner__gallery">
+            <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+              <!-- Works Gallery Single Item Start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/works/1400x1400_w01.webp" data-image="img/works/1400x1400_w01.webp" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="img/works/800_w01-thumb.webp" class="gallery__image" itemprop="thumbnail"
+                    alt="RojgarNepal Project">
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>RojgarNepal - Freelancing Platform</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">React</span>
+                    <span class="rounded-tag opposite">CSS</span>
+                    <span class="rounded-tag opposite">AI</span>
+                  </div>
+                  <p class="small">Developed a React-based web platform connecting blue-collar workers with clients.
+                    Implemented responsive UI designs using CSS. Added AI-based Recommendation System for effective job
+                    search. Created UI using MockFlow.
+                  </p>
+                  <div class="btn-group mt-3">
+                    <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="#">
+                      <span class="btn-caption">View Project</span>
+                      <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+              <!-- Works Gallery Single Item End -->
+
+              <!-- Works Gallery Single Item Start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/works/1400x1400_w02.webp" data-image="img/works/800_w02-thumb.webp" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="img/works/800_w02-thumb.webp" class="gallery__image" itemprop="thumbnail"
+                    alt="Event Booking Site">
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Event Booking Site</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag">HTML/CSS</span>
+                    <span class="rounded-tag">JavaScript</span>
+                    <span class="rounded-tag">PHP</span>
+                  </div>
+                  <p class="small">Created an event booking platform using HTML, CSS, JavaScript, and PHP. Designed
+                    user-friendly interfaces and developed backend functionalities for event registration and
+                    management. Ensured cross-browser compatibility and responsive design.
+                  </p>
+                  <div class="btn-group mt-3">
+                    <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="#">
+                      <span class="btn-caption">View Project</span>
+                      <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+              <!-- Works Gallery Single Item End -->
+
+              <!-- Works Gallery Single Item Start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/works/1400x1400_w04.webp" data-image="img/works/800_w04-thumb.webp" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="img/works/800_w04-thumb.webp" class="gallery__image" itemprop="thumbnail"
+                    alt="SaaS Accounting Platform">
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>SaaS Accounting Platform</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">MERN Stack</span>
+                    <span class="rounded-tag opposite">AWS</span>
+                    <span class="rounded-tag opposite">Docker</span>
+                  </div>
+                  <p class="small">Developed a full-stack financial SaaS application for small to mid-sized businesses.
+                    Deployed on AWS using EC2, S3, and RDS. Implemented secure authentication with JWT and role-based
+                    access control. Designed responsive dashboards for financial metrics and real-time reports. Used
+                    Docker and GitHub Actions for CI/CD pipeline automation.
+                  </p>
+                  <div class="btn-group mt-3">
+                    <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                      href="https://saas-project-office.vercel.app/" target="_blank">
+                      <span class="btn-caption">View Project</span>
+                      <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+              <!-- Works Gallery Single Item End -->
+
+              <!-- Works Gallery Single Item Start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/works/1400x1400_w03.webp" data-image="img/works/800_w03-thumb.webp" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="img/works/800_w03-thumb.webp" class="gallery__image" itemprop="thumbnail"
+                    alt="Chat Application">
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Chat Application</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag">React</span>
+                    <span class="rounded-tag">Real-time</span>
+                  </div>
+                  <p class="small">Built a real-time chat application using React. Implemented features for one-on-one
+                    messaging with a responsive UI. Integrated basic state management for message handling.</p>
+                  <!-- View Project Button -->
+                  <div class="btn-group mt-3">
+                    <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                      href="https://chat-app-demo.vercel.app" target="_blank">
+                      <span class="btn-caption">View Project</span>
+                      <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                  </div>
+                </figcaption>
+
+              </figure>
+              <!-- Works Gallery Single Item End -->
+            </div>
+          </div>
+        </div>
+        <!-- Content Block - Works Gallery End -->
+
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- About Section Start -->
+      <section id="about" class="inner about">
+
+        <!-- Content Block - H2 Section Title Start -->
+        <div class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>About Me</span>
+          </p>
+          <h2 class="h2__title animate-in-up">Transforming Ideas Into Digital Reality</h2>
+        </div>
+        <!-- Content Block - H2 Section Title End -->
+
+        <!-- Content Block - Achievements Start -->
+        <div class="content__block grid-block">
+          <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+            <!-- achievements single item -->
+            <!-- achievements single item -->
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number">1.5+</p>
+                <p class="achievements__descr">Years of experience</p>
+              </div>
+            </div>
+            <!-- achievements single item -->
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number">25+</p>
+                <p class="achievements__descr">Projects done</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Block - Achievements End -->
+
+        <!-- Content Block - About Me Data Start -->
+        <div class="content__block grid-block block-large">
+          <div class="container-fluid p-0">
+            <div class="row g-0 justify-content-between">
+
+              <!-- About Me Description Start -->
+              <div class="col-12 col-xl-8 grid-item about-descr">
+                <p class="about-descr__text animate-in-up">
+                  As a passionate <a href="#0" class="text-link">Software Engineer</a> I am a full-stack 
+                  developer and IT specialist passionate about transforming ideas into digital reality. 
+                  I build secure, scalable, and user-friendly web applications using the MERN stack, 
+                  AI integration, and modern technologies. My focus is on creating innovative solutions 
+                  that are accessible, efficient, and impactful for real-world users.
+                </p>
+                
+                <p class="about-descr__text animate-in-up">
+                  As a <a href="#0" class="text-link">Full Stack Developer</a>, I bridge the gap between design and
+                  functionality,
+                  creating seamless user experiences while maintaining robust system architecture. My commitment to
+                  continuous learning
+                  keeps me at the forefront of emerging technologies and industry best practices.
+                </p>
+                <div class="btn-group about-descr__btnholder animate-in-up"> <a
+                    class="btn mobile-vertical btn-default btn-hover btn-hover-accent"
+                    href="reza_rain_cv.docx.pdf" download>
+                    <span class="btn-caption">Download CV</span>
+                    <i class="ph-bold ph-download-simple"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- About Me Description End -->
+
+              <!-- About Me Information Start -->
+              <div class="col-12 col-xl-4 grid-item about-info">
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Name</small>
+                    Reza rain
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Phone</small>
+                    <a class="text-link-bold" href="tel:+9779800875451">+977-9800875451</a>
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Email</small>
+                    <a class="text-link-bold"
+                      href="mailto:rezaali20ab@gmail.com?subject=Message%20from%20your%20site">rezaali20ab@gmail.com</a>
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Location</small>
+                    <a class="text-link-bold" href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6"
+                      target="_blank">Kathmandu, Nepal</a>
+                  </h6>
+                </div>
+              </div>
+              <!-- About Me Information End -->
+
+            </div>
+          </div>
+        </div>
+        <!-- Content Block - About Me Data End -->
+
+        <!-- Content Block - Services Start -->
+        <div class="content__block grid-block">
+          <div class="container-fluid p-0">
+            <div class="row g-0 align-items-stretch cards">
+              <!-- services cards grid single item -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">Frontend<br>development</h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">UI/UX Design</span>
+                      <span class="rounded-tag tag-outline">Design to Code</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">I work with HTML/CSS, Framer and WordPress.</p>
+                  </div>
+                  <div class="cards__image d-flex animate-in-up">
+                    <img src="img/services/1200x900_s01.webp" alt="Service/Feature Image">
+                  </div>
+                </div>
+              </div>
+              <!-- services grid cards single item -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">Digital art and graphic design</h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">Illustrations</span>
+                      <span class="rounded-tag tag-outline">AI Experiments</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">I use Adobe Photoshop, Fresco and Blender to create
+                      illustrations and 3D renders for my clients and stocks.
+                    </p>
+                  </div>
+                  <div class="cards__image d-flex animate-in-up">
+                    <img src="img/services/1200x900_s02.webp" alt="Service/Feature Image">
+                  </div>
+                </div>
+              </div>
+              <!-- services grid cards single item -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">SEO/Digital marketing solutions</h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">Social Media</span>
+                      <span class="rounded-tag tag-outline">Analytics</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">Social media content plans, media monitoring, email and
+                      text messaging
+                      and search engine optimization.
+                    </p>
+                  </div>
+                  <div class="cards__image d-flex">
+                    <img src="img/services/1200x900_s03.webp" alt="Service/Feature Image">
+                  </div>
+                </div>
+              </div>
+              <!-- services grid cards single item -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">Brand<br>identity</h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">Logo Design</span>
+                      <span class="rounded-tag tag-outline">Style Guides</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">I help my clients to develop a personality and brand
+                      voice,
+                      design the brand look and logo.
+                    </p>
+                  </div>
+                  <div class="cards__image d-flex animate-in-up">
+                    <img src="img/services/1200x900_s04.webp" alt="Service/Feature Image">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Content Block - Services End -->
+        <section id="resume" class="inner resume">
+
+          <!-- Content Block - H2 Section Title Start -->
+          <div class="content__block block-large">
+
+            <h2 class="h2__title animate-in-up">Education and practical experience</h2>
+            <p class="h2__text animate-in-up">
+              Be what you would seem to be - or, if you'd like it put more simply - never imagine yourself not to be
+              otherwise
+              than what it might appear to others that what you were or
+              <a href="#0" class="text-link">might have been</a>
+              was not otherwise than what you had been
+              would have appeared to them to be otherwise.
+            </p>
+          </div>
+          <!-- Content Block - H2 Section Title End -->
+
+          <!-- Content Block - Education Start -->
+          <div class="content__block block-large">
+
+            <!-- H3 Block Start -->
+            <div class="section-h3">
+              <h3 class="h3__title animate-in-up">My education</h3>
+            </div>
+            <!-- H3 Block End -->
+
+            <!-- Education Lines Start -->
+            <div class="container-fluid p-0 resume-lines">
+              <!-- education single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2022 - 2025</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Bsc(Hons) Computing
+                  </h5>
+                  <p class="resume-lines__source animate-in-up">
+                    <a href="#0" class="text-link-bold" target="_blank">(Coventry University)</a>
+                  </p>
+                  <p class="resume-lines__source animate-in-up">
+                    <a href="#0" class="text-link-bold" target="_blank">Graduated with honors.</a>
+                  </p>
+
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Relevant Coursework: Web Development, Artificial
+                    Intelligence, Data Structures and Algorithms, Operating Systems, Multimedia Systems, C, C++, Python,
+                    and Java.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Education Lines End -->
+
+          </div>
+          <!-- Content Block - Education End -->
+
+          <!-- Content Block - Experience Start -->
+          <div class="content__block block-large">
+
+            <!-- H3 Block Start -->
+            <div class="section-h3">
+              <h3 class="h3__title animate-in-up">Work experience</h3>
+            </div>
+            <!-- H3 Block End --> <!-- Experience Lines Start -->
+            <div class="container-fluid p-0 resume-lines">
+              <!-- experience single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">Aug 2024–Feb 2025</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">IT Operations Specialist</h5>
+                  <p class="resume-lines__source animate-in-up">
+                    <a href="#0" class="text-link-bold" target="_blank"> Starline Engineering Pvt. Ltd. </a>
+                    <br>Kathmandu, Nepal
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Managed daily IT operations, providing technical support, troubleshooting, and implementing backup/recovery procedures to ensure system reliability, minimal downtime, and improved productivity.</p>
+                </div>
+              </div>
+              <!-- experience single item -->
+              
+              <!-- experience single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">Feb 2025–Present</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Full Stack Software Developer</h5>
+                  <p class="resume-lines__source animate-in-up">
+                    <a href="#0" class="text-link-bold" target="_blank"> Biskiran Technologies </a>
+                    <br>Kathmandu, Nepal
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Developed and maintained full-stack MERN 
+                    applications with secure RESTful APIs, optimized system performance, solved technical issues,
+                    collaborated in Agile teams, managed digital campaigns, and communicated effectively with 
+                    stakeholders.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Lines End -->
+
+          </div>
+          <!-- Content Block - Experience End -->
+
+          <!-- Content Block - H3 Block Start -->
+          <div class="content__block">
+            <div class="section-h3 section-h3-grid">
+              <h3 class="h3__title animate-in-up">Technical Proficiency</h3>
+            </div>
+          </div>
+          <!-- Content Block - H3 Block End -->
+
+          <!-- Content Block - Skills Categories Start -->
+          <div class="content__block grid-block block-large">
+            <!-- Skill Categories Container -->
+            <div class="container-fluid p-0">
+              <div class="row g-0 align-items-stretch">
+
+                <!-- Programming Languages Category -->
+                <div class="col-12 col-md-6 skill-category grid-item animate-card-3">
+                  <div class="skill-category__card">
+                    <h4 class="skill-category__title animate-in-up">Programming Languages</h4>
+                    <div class="skill-bars">
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>JavaScript</span>
+                          <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 95%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Python</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>HTML5/CSS3</span>
+                          <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 95%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Java</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>TypeScript</span>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 88%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Frameworks & Tools Category -->
+                <div class="col-12 col-md-6 skill-category grid-item animate-card-3">
+                  <div class="skill-category__card">
+                    <h4 class="skill-category__title animate-in-up">Frameworks & Tools</h4>
+                    <div class="skill-bars">
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>React/Next.js</span>
+                          <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 92%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Node.js/Express</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Django</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>AWS Cloud Services</span>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 88%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Git/GitHub</span>
+                          <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 95%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Databases Category -->
+                <div class="col-12 col-md-6 skill-category grid-item animate-card-3">
+                  <div class="skill-category__card">
+                    <h4 class="skill-category__title animate-in-up">Databases & AI</h4>
+                    <div class="skill-bars">
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>MySQL</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>MongoDB</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Machine Learning</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>TensorFlow/PyTorch</span>
+                          <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 80%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Development Skills Category -->
+                <div class="col-12 col-md-6 skill-category grid-item animate-card-3">
+                  <div class="skill-category__card">
+                    <h4 class="skill-category__title animate-in-up">Development Skills</h4>
+                    <div class="skill-bars">
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>API Integration</span>
+                          <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 92%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Responsive Design</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>CI/CD Pipelines</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Unit Testing</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <!-- Skill Bar Item -->
+                      <div class="skill-bar animate-in-up">
+                        <div class="skill-bar__title d-flex justify-content-between">
+                          <span>Agile/Scrum</span>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar__bar">
+                          <div class="skill-bar__progress" style="width: 88%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - Skills Categories End -->
+
+          <!-- Content Block - H3 Block Start -->
+          <div class="content__block">
+            <div class="section-h3 section-h3-grid">
+              <h3 class="h3__title animate-in-up">My Tech Stack</h3>
+            </div>
+          </div>
+          <!-- Content Block - H3 Block End -->
+
+          <!-- Content Block - Tools List Start -->
+          <div class="content__block grid-block block-large">
+            <!-- Tools List Start -->
+            <div class="tools-cards d-flex justify-content-start flex-wrap">
+              <!-- Programming Languages -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/javascript-svgrepo-com.svg"
+                    alt="JavaScript Icon">
+                  <h6 class="tools-cards__caption animate-in-up">JavaScript</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/python-svgrepo-com.svg" alt="Python Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Python</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/java-4-logo-svgrepo-com.svg"
+                    alt="Java Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Java</h6>
+                </div>
+              </div>
+
+              <!-- Frontend Technologies -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-html.svg" alt="HTML5 Icon">
+                  <h6 class="tools-cards__caption animate-in-up">HTML5</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-css.svg" alt="CSS3 Icon">
+                  <h6 class="tools-cards__caption animate-in-up">CSS3</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/react-svgrepo-com.svg" alt="React Icon">
+                  <h6 class="tools-cards__caption animate-in-up">React</h6>
+                </div>
+              </div>
+
+              <!-- Backend & Infrastructure -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/nodejs-1-logo-svgrepo-com.svg"
+                    alt="Node.js Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Node.js</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/aws-svgrepo-com.svg" alt="AWS Icon">
+                  <h6 class="tools-cards__caption animate-in-up">AWS</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/mysql-logo-svgrepo-com.svg"
+                    alt="MySQL Icon">
+                  <h6 class="tools-cards__caption animate-in-up">MySQL</h6>
+                </div>
+              </div>
+
+              <!-- Development Tools -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/github-color-svgrepo-com.svg"
+                    alt="GitHub Icon">
+                  <h6 class="tools-cards__caption animate-in-up">GitHub</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-figma.svg" alt="Figma Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+                </div>
+              </div>
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://lh3.googleusercontent.com/oCZKJRNdYU2EuZbVwkJEF5xba3CQBGS4VQkXBOaxzjoQkKoxMmUGMbLDpbnx_3MOZN2aYe1ncx9QgnwkEGXon7JP0XsCLNDAqF4paQ=e365-pa-nu-rw-s0"
+                    alt="Notion Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Canva</h6>
+                </div>
+              </div>
+              <!-- MongoDB -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="MongoDB Icon">
+                  <h6 class="tools-cards__caption animate-in-up">MongoDB</h6>
+                </div>
+              </div>
+
+              <!-- Django -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/django-13-1175186.png" alt="Django Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Django</h6>
+                </div>
+              </div>
+
+              <!-- Angular -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/angular-3-226070.png" alt="Angular Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Angular</h6>
+                </div>
+              </div>
+
+              <!-- Docker -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/docker-13-1175230.png" alt="Docker Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Docker</h6>
+                </div>
+              </div>
+
+
+              <!-- Redis -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/redis-6-1175101.png" alt="Redis Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Redis</h6>
+                </div>
+              </div>
+
+              <!-- Flutter -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up"
+                    src="https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png" alt="Flutter Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Flutter</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools List End -->
+          </div>
+
+          <!-- Content Block - H2 Block Start -->
+          <div class="content__block section-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+                fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+              </svg>
+              <span>Testimonials</span>
+            </p>
+            <h2 class="h2__title animate-in-up">What they say about me</h2>
+          </div>
+          <!-- Content Block - H2 Block End -->
+
+          <!-- Content Block - Testimonials Slider Start -->
+          <div class="content__block">
+
+            <!-- Testimonials Slider Start -->
+            <div class="testimonials-slider">
+              <!-- slider main container -->
+              <div class="swiper-testimonials">
+                <!-- additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- slides -->
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <div class="tauthor__avatar">
+                          <img src="img/rohit.png" alt="Rohit Jha">
+                        </div>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Rohit Jha</p>
+                          <p class="tauthor__position">CEO at
+                            <a href="#0" class="text-link-bold" target="_blank">BisKIRAN TECHNOLOGIES</a>
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>Reza is a highly skilled and dedicated software developer. 
+                          His expertise in MERN stack development,
+                          problem-solving, and ability to deliver high-quality solutions has made a 
+                          significant impact on our projects.</p>
+                      </div>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="https://www.linkedin.com/in/jrohitofficial/" target="_blank">
+                          <span class="btn-caption">LinkedIn</span>
+                          <i class="ph-bold ph-linkedin-logo"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials-card  animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex  animate-in-up">
+                        <div class="tauthor__avatar">
+                          <img src="img/jiwan.jpg" alt="Jiwan Humagain">
+                        </div>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Jiwan Humagain</p>
+                          <p class="tauthor__position">Software Engineer at
+                            <a href="#0" class="text-link-bold" target="_blank">Sona Consolidate</a>
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>Reza is an exceptional IT Operations Specialist. His attention to detail, technical expertise, and proactive approach to 
+                        optimizing IT systems have greatly improved our operational efficiency.</p>
+                      </div>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="https://www.linkedin.com/in/jiwan-humagain-89aa8b205/" target="_blank">
+                          <span class="btn-caption">LinkedIn</span>
+                          <i class="ph-bold ph-linkedin-logo"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination mxd-swiper-pagination animate-in-up"></div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
+                  <a class="btn btn-square btn-square-s btn-outline slide-left" href="#0">
+                    <i class="ph-bold ph-caret-left"></i>
+                  </a>
+                </div>
+                <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
+                  <a class="btn btn-square btn-square-s btn-outline slide-right" href="#0">
+                    <i class="ph-bold ph-caret-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonials Slider End -->
+          </div>
+          <!-- Content Block - Testimonials Slider End -->
+        </section>
+
+      </section>
+      <!-- About Section End -->
+
+      <section id="resume-achievements" class="inner services">
+
+        <div class="content__block section-title">
+          <p class="h2__subtitle animate-in-up">
+            <span>My Services</span>
+          </p>
+          <h2 class="h2__title animate-in-up">What I Can Do For You</h2>
+        </div>
+
+        <div class="content__block grid-block">
+          <div class="container-fluid p-0">
+            <div class="row g-0 align-items-stretch cards">
+
+              <!-- Web Development -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Web Development"
+                      style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">Web Development</h4>
+                    <p class="small cards__text">
+                      I build modern, scalable and high-performance websites using MERN Stack, Django, and modern
+                      frameworks.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Hire Me</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Mobile First Design -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img src="https://images.pexels.com/photos/5082561/pexels-photo-5082561.jpeg"
+                      alt="Mobile First Design" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">Mobile First Design</h4>
+                    <p class="small cards__text">
+                      I design fully responsive and mobile-optimized apps that look great on every screen.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Let’s Work</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- IT Specialist -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg" alt="IT Specialist"
+                      style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">IT Specialist</h4>
+                    <p class="small cards__text">
+                      Professional IT solutions including infrastructure setup, troubleshooting, and optimization.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Consult Now</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Custom API Development -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img
+                      src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/219503281/original/4f226977e5884aa18f79816fcac37a1a392e7479/make-custom-api-and-api-integration.jpg"
+                      alt="API Development" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">Custom API Development</h4>
+                    <p class="small cards__text">
+                      Building secure RESTful APIs and powerful backend systems tailored for your project.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Start Project</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- DevOps -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="DevOps"
+                      style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">DevOps</h4>
+                    <p class="small cards__text">
+                      CI/CD pipelines, Docker, GitHub Actions, and infrastructure automation services.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Optimize Now</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Deployment & Cloud -->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+
+                  <div class="cards__image" style="width:100%; height:250px; overflow:hidden;">
+                    <img
+                      src="https://www.aspirets.com/wp-content/uploads/2022/12/Cloud-computing-deployment-models-1000x503.jpg"
+                      alt="Cloud Deployment" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="cards__descr d-flex flex-column" style="flex:1;">
+                    <h4 class="cards__title">Deployment & Cloud</h4>
+                    <p class="small cards__text">
+                      Deploying on AWS, configuring domains, SSL, and performance monitoring for live applications.
+                    </p>
+
+                    <div style="margin-top:auto;">
+                      <a href="#contact"
+                        class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline">
+                        <span class="btn-caption">Deploy Now</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- Contact Section Start -->
+      <section id="contact" class="inner contact">
+
+        <!-- Content Block - H2 Section Title Start -->
+        <div class="content__block section-title">
+          <p class="h2__subtitle  animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Contact</span>
+          </p>
+          <h2 class="h2__title  animate-in-up">Let's make something awesome together!</h2>
+        </div>
+        <!-- Content Block - H2 Section Title End -->
+
+        <!-- Content Block - Contact Form Start -->
+        <div class="content__block grid-block block-grid-large">
+          <div class="form-container">
+
+            <!-- Reply Messages Start -->
+            <div class="form__reply centered text-center">
+              <i class="ph-bold ph-smiley reply__icon"></i>
+              <p class="reply__title">Done!</p>
+              <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
+            </div>
+            <!-- Reply Messages End -->
+
+            <!-- Contact Form Start -->
+            <form class="form contact-form" id="contact-form">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Starter Template">
+              <input type="hidden" name="admin_email" value="support@mixdesign.club">
+              <input type="hidden" name="form_subject" value="Contact Form Message">
+              <!-- END Hidden Required Fields-->
+              <div class="container-fluid p-0">
+                <div class="row gx-0">
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="text" name="Name" placeholder="Your Name*" required>
+                  </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="text" name="Company" placeholder="Company Name">
+                  </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="email" name="E-mail" placeholder="Email Adress*" required>
+                  </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="tel" name="Phone" placeholder="Phone Number*" required>
+                  </div>
+                  <div class="col-12 form__item animate-in-up">
+                    <textarea name="Message" placeholder="A Few Words*" required></textarea>
+                  </div>
+                  <div class="col-12 form__item animate-in-up">
+                    <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
+                      <span class="btn-caption">Send Message</span>
+                      <i class="ph-bold ph-paper-plane-tilt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Contact Form End -->
+
+          </div>
+        </div>
+        <!-- Content Block - Contact Form End -->
+
+        <!-- Content Block - Socials Cards Start -->
+        <div class="content__block grid-block">
+          <div class="socials-cards d-flex justify-content-start flex-wrap">
+            <!-- socials item -->
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-github-logo"></i>
+                <a class="socials-cards__link" href="https://github.com/Enigma-de" target="_blank"></a>
+              </div>
+            </div>
+            <!-- socials item -->
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-linkedin-logo"></i>
+                <a class="socials-cards__link" href="https://www.linkedin.com/in/Reza-rain-00935133a/"
+                  target="_blank"></a>
+              </div>
+            </div>
+            <!-- socials item -->
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-whatsapp-logo"></i>
+                <a class="socials-cards__link"
+                  href="https://wa.me/9779800875451?text=Hello%20Reza,%20I%20visited%20your%20portfolio."
+                  target="_blank"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Content Block - Socials Cards End -->
+
+        <!-- Content Block - Teaser Start -->
+        <div class="content__block">
+          <div class="teaser">
+            <p class="teaser__text animate-in-up">Want to know more about me, tell me
+              about your project or just to say hello?
+              <a class="text-link-bold" href="mailto:example@example.com?subject=Message%20from%20your%20site">Drop me a
+                line</a>
+              and I'll get back
+              as soon as possible.
+            </p>
+          </div>
+        </div>
+        <!-- Content Block - Teaser End -->
+
+        <!-- Content Block - Contact Data Start -->
+        <div class="content__block">
+          <div class="container-fluid p-0 contact-lines animate-in-up">
+            <div class="row g-0 contact-lines__item">
+              <!-- data item -->
+              <div class="col-12 col-md-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Location</p>
+                <p class="contact-lines__text animate-in-up">
+                  <a class="text-link-bold" href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6" target="_blank">Kathmandu,
+                    Nepal</a>
+                </p>
+              </div>
+              <!-- data item -->
+              <div class="col-12 col-md-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Phone</p>
+                <p class="contact-lines__text animate-in-up">
+                  <a class="text-link-bold" href="tel:+9779800875451">+977-9800875451</a>
+                </p>
+              </div>
+              <!-- data item -->
+              <div class="col-12 col-md-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Email</p>
+                <p class="contact-lines__text animate-in-up">
+                  <a class="text-link-bold"
+                    href="mailto:rezaali20ab@gmail.com?subject=Message%20from%20your%20site">rezaali20ab@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Block - Contact Data End -->
+
+      </section> <!-- Contact Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="copyright copyright-animation">
+            <p class="contact-lines__text">&copy; <span id="copyright-year">2025</span> • Reza rain</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
+
+    </div>
+  </div>
+  <!-- Page Content End -->
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader-active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Load Scripts Start -->
+  <script src="js/libs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    const randomX = random(-400, 400);
+    const randomY = random(-200, 200);
+    const randomDelay = random(0, 50);
+    const randomTime = random(20, 40);
+    const randomTime2 = random(5, 12);
+    const randomAngle = random(-30, 150);
+
+    const blurs = gsap.utils.toArray(".blur");
+    blurs.forEach((blur) => {
+      gsap.set(blur, {
+        x: randomX(-1),
+        y: randomX(1),
+        rotation: randomAngle(-1)
+      });
+
+      moveX(blur, 1);
+      moveY(blur, -1);
+      rotate(blur, 1);
+    });
+
+    function rotate(target, direction) {
+      gsap.to(target, randomTime2(), {
+        rotation: randomAngle(direction),
+        ease: Sine.easeInOut,
+        onComplete: rotate,
+        onCompleteParams: [target, direction * -1]
+      });
+    }
+
+    function moveX(target, direction) {
+      gsap.to(target, randomTime(), {
+        x: randomX(direction),
+        ease: Sine.easeInOut,
+        onComplete: moveX,
+        onCompleteParams: [target, direction * -1]
+      });
+    }
+
+    function moveY(target, direction) {
+      gsap.to(target, randomTime(), {
+        y: randomY(direction),
+        ease: Sine.easeInOut,
+        onComplete: moveY,
+        onCompleteParams: [target, direction * -1]
+      });
+    }
+
+    function random(min, max) {
+      const delta = max - min;
+      return (direction = 1) => (min + delta * Math.random()) * direction;
+    }    </script>
+  <script src="js/app.js"></script>
+  <script src="js/gallery-init.js"></script>
+  <script src="js/stars-effect.js"></script>
+  <script src="js/avatar-3d.js"></script>
+  <script>
+    // Update copyright year dynamically and handle animations
+    document.addEventListener('DOMContentLoaded', function () {
+      // Update copyright year
+      const yearElement = document.getElementById('copyright-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      // Animate footer when it comes into view
+      const footer = document.querySelector('.footer');
+      const copyright = document.querySelector('.copyright');
+
+      if (footer && copyright) {
+        // Create an intersection observer to detect when footer is in viewport
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              copyright.classList.add('copyright-animation');
+              observer.unobserve(entry.target); // Stop observing once animated
+            }
+          });
+        }, { threshold: 0.1 });
+
+        observer.observe(footer);
+
+        // Prevent footer from shrinking during scroll
+        window.addEventListener('scroll', function () {
+          footer.style.transform = 'none';
+          footer.style.transition = 'none';
+        });
+      }
+    });
+  </script>
+  <!-- Load Scripts End -->
+
+</body>
+
+</html>
