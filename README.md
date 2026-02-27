@@ -1,2 +1,2 @@
 # portfolio
-Welcome Everyone this my Portfolio code
+Welcome Everyone! Its my Portfolio 
