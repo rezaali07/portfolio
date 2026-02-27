@@ -1481,45 +1481,100 @@
         </div>
 
       </section>
+      <!-- Contact Section Start -->
+      <section id="contact" class="inner contact">
 
+        <div class="content__block section-title">
+          <p class="h2__subtitle animate-in-up"><span>Contact</span></p>
+          <h2 class="h2__title animate-in-up">Let's make something awesome together!</h2>
+        </div>
 
+        <div class="content__block grid-block block-grid-large">
+          <div class="form-container">
 
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLSd6oYxCfEOLPrKg5iPQP9GgCMa0RSd-mqWAMryg0JktmmxZKQ/formResponse"
-        method="POST" class="form contact-form" id="contact-form">
-
-        <div class="container-fluid p-0">
-          <div class="row gx-0">
-
-            <div class="col-12 col-md-6 form__item animate-in-up">
-              <input type="text" name="entry.1513608412" placeholder="Your Name*" required>
+            <!-- Reply Popup Message -->
+            <div class="form__reply centered text-center" id="form-reply" style="display:none;">
+              <p class="reply__title">Done!</p>
+              <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
             </div>
 
-            <div class="col-12 col-md-6 form__item animate-in-up">
-              <input type="text" name="entry.1456065032" placeholder="Company Name">
-            </div>
+            <!-- Contact Form -->
+            <form class="form contact-form" id="contact-form">
 
-            <div class="col-12 col-md-6 form__item animate-in-up">
-              <input type="email" name="entry.1995985157" placeholder="Email Address*" required>
-            </div>
+              <div class="container-fluid p-0">
+                <div class="row gx-0">
 
-            <div class="col-12 col-md-6 form__item animate-in-up">
-              <input type="tel" name="entry.168994298" placeholder="Phone Number*" required>
-            </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="text" name="entry.1513608412" placeholder="Your Name*" required>
+                  </div>
 
-            <div class="col-12 form__item animate-in-up">
-              <textarea name="entry.968077899" placeholder="A Few Words*" required></textarea>
-            </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="text" name="entry.1456065032" placeholder="Company Name">
+                  </div>
 
-            <div class="col-12 form__item animate-in-up">
-              <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
-                <span class="btn-caption">Send Message</span>
-              </button>
-            </div>
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="email" name="entry.1995985157" placeholder="Email Address*" required>
+                  </div>
+
+                  <div class="col-12 col-md-6 form__item animate-in-up">
+                    <input type="tel" name="entry.168994298" placeholder="Phone Number*" required>
+                  </div>
+
+                  <div class="col-12 form__item animate-in-up">
+                    <textarea name="entry.968077899" placeholder="Your Message*" required></textarea>
+                  </div>
+
+                  <div class="col-12 form__item animate-in-up">
+                    <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
+                      <span class="btn-caption">Send Message</span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+            </form>
 
           </div>
         </div>
-      </form>
+
+        <!-- Contact Info / Socials can stay same -->
+
+      </section>
+      <!-- Contact Section End -->
+
+      <script>
+        const form = document.getElementById('contact-form');
+        const reply = document.getElementById('form-reply');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault(); // stop default submission
+
+          // Collect form data
+          const data = new FormData(form);
+
+          // Google Form URL
+          const url = 'https://docs.google.com/forms/d/e/1FAIpQLSd6oYxCfEOLPrKg5iPQP9GgCMa0RSd-mqWAMryg0JktmmxZKQ/formResponse';
+
+          // Send via fetch (AJAX)
+          fetch(url, {
+            method: 'POST',
+            mode: 'no-cors', // Google Forms requires no-cors
+            body: data
+          }).then(() => {
+            // Show success popup
+            reply.style.display = 'block';
+            setTimeout(() => { reply.style.display = 'none'; }, 4000);
+
+            // Clear fields
+            form.reset();
+          }).catch(err => {
+            alert('Something went wrong. Please try again.');
+            console.error(err);
+          });
+        });
+      </script>
+
 
       <!-- Footer Section Start -->
       <footer class="footer">
@@ -1691,24 +1746,7 @@
         });
       }
     });
-    const form = document.getElementById("contact-form");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors"
-      }).then(() => {
-        alert("✅ Message sent successfully!");
-        form.reset();
-      }).catch(() => {
-        alert("❌ Something went wrong. Try again.");
-      });
-    });
   </script>
 
   <!-- Load Scripts End -->
